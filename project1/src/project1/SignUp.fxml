@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="344.0" style="-fx-background-color: #FFFAE5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project1.SignUpController">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="152.0" layoutX="-16.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="96.0" prefHeight="28.0" prefWidth="84.0" text="SIGNUP" textFill="#143601">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_email" layoutX="72.0" layoutY="186.0" prefHeight="25.0" prefWidth="219.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #344e41; -fx-border-width: 0px 0px 2px 0px;">
+         <opaqueInsets>
+            <Insets right="120.0" />
+         </opaqueInsets>
+         <tooltip>
+            <Tooltip text="Enter your email" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="txt_username" layoutX="72.0" layoutY="229.0" prefHeight="25.0" prefWidth="219.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #344e41; -fx-border-width: 0px 0px 2px 0px;">
+         <opaqueInsets>
+            <Insets right="120.0" />
+         </opaqueInsets>
+         <tooltip>
+            <Tooltip text="Enter your username" />
+         </tooltip>
+      </TextField>
+      <PasswordField fx:id="txt_password" layoutX="73.0" layoutY="273.0" prefHeight="25.0" prefWidth="219.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #344e41; -fx-border-width: 0px 0px 2px 0px;">
+         <opaqueInsets>
+            <Insets right="120.0" />
+         </opaqueInsets>
+         <tooltip>
+            <Tooltip text="Enter your password" />
+         </tooltip>
+      </PasswordField>
+      <Label fx:id="lbl_message" layoutX="112.0" layoutY="136.0" prefHeight="14.0" prefWidth="118.0" textFill="#e00000">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_signup" layoutX="123.0" layoutY="357.0" mnemonicParsing="false" onAction="#signup" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #E8FCCF; -fx-border-color: #538D22; -fx-border-width: 0.5px; -fx-border-radius: 7px 7px 7px 7px;" text="SignUp">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="119.0" layoutY="408.0" text="Already Signup?">
+         <font>
+            <Font name="Franklin Gothic Medium" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_login" layoutX="196.0" layoutY="403.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: transparent;" text="Login" textFill="RED">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="project1.jnlp">
+  <information>
+    <title>project1</title>
+    <vendor>OWN</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-java-8.0.26.jar" size="2462364" download="eager" />
+    <jar href="lib\ojdbc14-10.2.0.2.0.jar" size="1545954" download="eager" />
+    <jar href="project1.jar" size="743509" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="project1.Project1"  name="project1" />
+  <update check="always"/>
+</jnlp>
